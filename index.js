@@ -218,7 +218,7 @@ if(message.content == '문아 문이봇초대') {
 
     message.channel.send(embed)
 
-  
+    
   } else if(message.content == '문아 도움말') {
     let helpImg = 'https://cdn.discordapp.com/attachments/763603688476377088/766481577172795452/G3c1.gif';
     let commandList = [
