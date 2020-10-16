@@ -226,7 +226,7 @@ if(message.content == '문아 문이봇초대') {
       {name: 'ping', desc: '봇테스트'},
       {name: '문아 엠베드', desc: 'embed 예제1'},
       {name: '문아 공지보내', desc: '전체공지'},
-      {name: '!청소', desc: '텍스트 지움'},
+      {name: '문아 청소해', desc: '텍스트 지움'},
       {name: '문아 초대코드', desc: '해당 채널의 초대 코드 표기'},
       {name: '문아 문이봇초대', desc: '문이봇 초대코드'},
     ];
