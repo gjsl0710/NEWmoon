@@ -226,7 +226,7 @@ if(message.content == '문아 문이봇초대') {
       {name: 'ping', desc: '봇테스트'},
       {name: '문아 엠베드', desc: 'embed 예제1'},
       {name: '문아 공지보내', desc: '전체공지'},
-      {name: '문아 청소해', desc: '텍스트 지움'},
+      {name: '문아 청소', desc: '텍스트 지움'},
       {name: '문아 초대코드', desc: '해당 채널의 초대 코드 표기'},
       {name: '문아 문이봇초대', desc: '문이봇 초대코드'},
     ];
@@ -299,18 +299,18 @@ if(message.content == '문아 문이봇초대') {
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('공지를 전송했습니다.');
+      return message.reply('공지전송 완료 ^^~');
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
-  } else if(message.content.startsWith('문아 청소해')) {
+  } else if(message.content.startsWith('문아 청소')) {
     if(message.channel.type == 'dm') {
       return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
     
     if(message.channel.type != 'dm' && checkPermission(message)) return
 
-    var clearLine = message.content.slice('문아 청소해'.length);
+    var clearLine = message.content.slice('문아 청소'.length);
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
@@ -337,7 +337,7 @@ if(message.content == '문아 문이봇초대') {
     } else {
       message.channel.bulkDelete(parseInt(clearLine)+1)
         .then(() => {
-          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "개의 메시지를 삭제했습니다. (이 메세지는 잠시 후에 사라집니다.)");
+          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "개 쓱싹쓱싹");
         })
         .catch(console.error)
     }
