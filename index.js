@@ -19,6 +19,7 @@ client.on('ready', () => {
     '말거지마',
     '에베베베베',
     '메렁메렁',
+    '문이봇V2 개발중!'
   ]
   let state_list_index = 1;
   let change_delay = 3000; // 이건 초입니당. 1000이 1초입니당.
